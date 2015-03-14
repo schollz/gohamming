@@ -4,7 +4,7 @@ package hamming
 // returns -1 if the input is not of equal length
 func Calc(one string, two string) int {
 	// check length and bail
-	if len(one) != len(two) {
+	if len(one) != len(two) || len(one) == 0 {
 		return -1
 	}
 
