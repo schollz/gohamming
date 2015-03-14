@@ -6,6 +6,9 @@ func Calc(one string, two string) int {
 		return -1
 	}
 
+	if one == two {
+		return 0
+	}
 	var result int = 0
 	for i, r := range one {
 		if uint8(r) != two[i] {
