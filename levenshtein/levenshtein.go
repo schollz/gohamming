@@ -2,6 +2,7 @@ package levenshtein
 
 // This function returns the hamming distance (int) for two strings
 // returns -1 if the input is not of equal length
+// https://en.wikipedia.org/wiki/Levenshtein_distance
 func Calc(one string, two string) int {
 	// check length and bail
 	if len(one) != len(two) {
